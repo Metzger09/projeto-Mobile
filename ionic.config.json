@@ -1,0 +1,7 @@
+{
+  "name": "temrete",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

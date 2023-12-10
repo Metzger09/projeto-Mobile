@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card *ngIf="data">
+    <ion-card-header>
+      <ion-card-title>ordenação ascendente dos dados a partir da pripriedade “id”</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item *ngFor="let item of data">
+          <ion-label>ID: {{ item.id }}</ion-label>
+          <ion-label>Type: {{ item.type }}</ion-label>
+          <ion-label>Price: {{ item.price | currency: 'USD' }}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
